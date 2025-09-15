@@ -1,0 +1,13 @@
+SELECT * FROM artistas
+
+SELECT COUNT (*) AS total_artistas FROM ARTISTAS;
+
+SELECT NOME, MUSICA_MAIS_OUVIDA FROM artistas;
+
+SELECT NOME, MUSICA_MAIS_OUVIDA FROM artistas
+WHERE PAIS_ORIGEM = 'Coreia do sul'
+
+SELECT NOME, MUSICA_MAIS_OUVIDA FROM artistas
+WHERE id = 3
+
+//varchar int boolean
