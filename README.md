@@ -55,4 +55,52 @@ CREATE TABLE usuarios (
 ('TestAccount1', 'test1@email.com', 0, '2024-03-15'),
 ('TestAccount2', 'test2@email.com', 0, '2024-03-18'),
 ('AdminTest', 'admin@email.com', 0, '2024-03-20');
+
+CREATE DATABASE beautytech;
+
+CREATE TABLE produtos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    categoria VARCHAR(30) NOT NULL,
+    estoque INT DEFAULT 0
+);
+
+
+INSERT INTO produtos (nome,marca,preco,categoria,estoque)
+VALUES
+('Sérum Niacinamida 10% + Zinco 1%', 'The Ordinary', 45.00, 'Skincare', '2024-03-10'),
+('Base Líquida Pro Filt''r Soft Matte', 'Fenty Beauty', 199.90, 'Maquiagem', '2024-03-15'),
+('Batom Líquido Stay Vulnerable', 'Rare Beauty', 120.00, 'Maquiagem', '2024-03-20'),
+('Creme Hidratante FPS 30', 'Glossier', 180.50, 'Skincare', '2024-03-22'),
+('Shampoo Fortificante', 'Kérastase', 250.00, 'Cabelos', '2024-03-25'),
+('Perfume Daisy Eau de Toilette', 'Marc Jacobs', 450.00, 'Perfumes', '2024-03-28'),
+('Máscara de Cílios Volume Extra', 'Maybelline', 65.90, 'Maquiagem', '2024-04-01'),
+('Protetor Solar Facial com Cor', 'La Roche-Posay', 89.90, 'Skincare', '2024-04-05'),
+('Loção Hidratante Corporal', 'CeraVe', 75.00, 'Skincare', '2024-04-08'),
+('Óleo Reparador de Pontas', 'LOréal Professionnel', 130.00, 'Cabelos', '2024-04-12'),
+('Bruma Fixadora de Maquiagem', 'MAC Cosmetics', 150.00, 'Maquiagem', '2024-04-15'),
+('Condicionador Hidratante', 'Pantene', 30.00, 'Cabelos', '2024-04-18'),
+('Iluminador Líquido', 'Benefit Cosmetics', 170.00, 'Maquiagem', '2024-04-20'),
+('Sabonete Facial em Gel', 'Neutrogena', 40.00, 'Skincare', '2024-04-23'),
+('Perfume Light Blue Eau de Toilette', 'Dolce & Gabbana', 520.00, 'Perfumes', '2024-04-25'),
+('Tônico Adstringente', 'Adcos', 95.00, 'Skincare', '2024-04-28'),
+('Creme para Pentear', 'Salon Line', 25.00, 'Cabelos', '2024-05-01'),
+('Delineador Líquido Preto', 'Vult', 35.00, 'Maquiagem', '2024-05-05'),
+('Perfume Good Girl', 'Carolina Herrera', 650.00, 'Perfumes', '2024-05-08'),
+('Máscara Facial de Argila', 'The Body Shop', 80.00, 'Skincare', '2024-05-10')
+
+SELECT * FROM produtos;
+
+UPDATE usuarioS SET username  = 'ProGamer2025'
+WHERE username = 'NoobMaster';
+
+SELECT * FROM usuarios;
+
+UPDATE usuarios SET pontos = pontos + 1000;
+
+SELECT * FROM usuarios;
 ```
+
+
