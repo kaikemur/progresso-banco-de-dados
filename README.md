@@ -101,6 +101,9 @@ SELECT * FROM usuarios;
 UPDATE usuarios SET pontos = pontos + 1000;
 
 SELECT * FROM usuarios;
+
+
+
 ```
 
 
